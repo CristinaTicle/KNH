@@ -1,0 +1,8 @@
+# Ignore wp-config.php and other sensitive files
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-*/ 
+node_modules/
+.htaccess
