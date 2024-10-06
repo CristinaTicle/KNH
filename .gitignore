@@ -1,10 +1,34 @@
-# Ignore wp-config.php and other sensitive files
+# Ignore WordPress core files
+/wp-admin/
+/wp-includes/
+
+# Ignore sensitive config file
 wp-config.php
-wp-content/uploads/
+
+# Ignore WordPress transient files
+*.log
+*.tmp
+
+# Ignore backup and cache directories/files
 wp-content/cache/
-wp-content/upgrade/
-wp-content/backup-*/ 
-node_modules/
+wp-content/backup/
+wp-content/backups/
+wp-content/uploads/wpcf7_captcha/
+/wp-content/advanced-cache.php
+/.htaccess
+
+# Ignore WordPress uploads directory (optional, if too large)
+/wp-content/uploads/
+
+# Ignore backup files
+*.zip
+*.tar
+*.gz
 *.wpress
-wp-content/ailwm-backups/
-.htaccess
+
+# Ignore the database (MySQL dump)
+*.sql
+*.db
+
+# Ignore GitHub Desktop settings
+desktop.ini
